@@ -1,0 +1,65 @@
+# Pedestrian CA simulator in Python
+#
+# *** Bobby Dodd Stadium Map ****
+#
+# Copyright 2016 Yuying Liu, Xiao Wang & Sen Yang
+# {yliu814, xiaowang, syang356}@gatech.edu
+
+This package is a simulator of dynamics of pedestrians, with visualization tools.
+----------------------------
+Commanding Running Arguments
+----------------------------
+
+Using terminal in the directory of the README file. 
+Make sure that you have access to run the ./bin/simulation
+
+If not, tpye:
+chmod +x ./bin/simulation
+
+Then in the same directory, typing:
+./bin/simulation
+
+-----------
+File List
+------------
+License                    contains license information
+README                     how to run this package and some information
+requirement.txt            outer package dependencies
+setup.py                   can be used to setup the package
+/bin/
+      simulation           function to run this package, all packages in /src/
+
+/tests                     formerly used as test module
+/docs
+
+/src/
+      __init__.py           enable the whole documents be a package
+      main.py               main function to run the model and simulation
+      Pedestrian_Class.py   definition of its atrributes and some functions 
+      Grid_Class.py         definitoon of grid attributes and functions
+      visual.py             functions to run the simulator
+      Generator.py          definition and functions of generator
+      ped_update.py         update rule of one time step
+      read.py               read map or static data in to the algorithm
+      build_map.py          build a map contains many grid class objects
+      path.py               add path for python to find necessary pacages
+      write.py              write simulated data to txt or json
+      /pycx-0.31
+                ...         all .py modules to run the simulator
+      /Data
+           static1.txt
+           static2.txt
+           static3.txt
+           static4.txt
+           static5.txt
+           static6.txt
+           static7.txt
+           static8.txt
+           map.txt
+      /Preprocess
+                  lee.cpp         apply algorithms to calculate the shortest path for each destination
+                  lee.py          python version of the lee's algorithm
+                  create_map.py   create the map matrix
+
+
+
